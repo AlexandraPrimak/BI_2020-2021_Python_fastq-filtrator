@@ -1,6 +1,5 @@
 import sys
 
-
 def count_GC(fastq_read):
     count = 0
     for base in fastq_read:
@@ -39,9 +38,7 @@ keep_filtered = False
 gc_bounds = []
 input_file = sys.argv[-1]
 
-
 output_base_name = '.'.join(splitted_by_dots[0 : len(splitted_by_dots) - 1])
-
 
 i = 1
 while i < len(sys.argv) - 1:
