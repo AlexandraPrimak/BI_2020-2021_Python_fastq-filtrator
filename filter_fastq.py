@@ -26,6 +26,7 @@ def validate_read(fastq_read, min_length, gc_bounds):
             return False
     return True
 
+
 last_arg = sys.argv[len(sys.argv) - 1]
 splitted_by_dots = last_arg.split('.')
 
@@ -34,7 +35,7 @@ KEEP_FILTERED_ARG = '--keep_filtered'
 GC_BOUNDS_ARG = '--gc_bounds'
 OUTPUT_BASE_NAME_ARG = '--output_base_name'
 
-valid_args = [ 
+valid_args = [
     MIN_LENGTH_ARG,
     KEEP_FILTERED_ARG,
     GC_BOUNDS_ARG,
